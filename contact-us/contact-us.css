@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Poppins';
+    /* Replace with your preferred font name */
+    src: url('../Poppins/Poppins-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    /* Replace with your preferred font name */
+    src: url('../Inter/static/Inter-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Irish grover';
+    /* Replace with your preferred font name */
+    src: url('../Irish_Grover/IrishGrover-Regular.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    /* Replace with your preferred font name */
+    src: url('../Lexend/static/Lexend-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #533B2F;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 2%;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.contact-vue {
+    height: 100vh;
+    background-image: url(../cup4.png);
+    background-size: 50%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.contact-vue>h1 {
+    color: #BA6E4E;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.contact-vue .split-vue {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.contact-vue .split-vue h1 {
+    color: #AF6343;
+    font-size: 21px;
+    font-family: 'Poppins';
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-vue .split-vue p {
+    color: #AF6343;
+    font-size: 12px;
+    font-family: 'Poppins';
+    width: 300px;
+}
+
+.contact-vue .split-vue .s2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-vue .split-vue .s2 input {
+    font-family: 'Poppins';
+    width: 777px;
+    height: 50px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    padding: 4px;
+    border: 1px solid rgba(186, 110, 78, 0.53);
+    background: rgba(255, 254, 254, 0.86);
+}
+
+.contact-vue .split-vue .s2 textarea {
+    font-family: 'Poppins';
+    width: 777px;
+    height: 105px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid rgba(186, 110, 78, 0.53);
+    background: rgba(255, 254, 254, 0.86);
+}
+
+.contact-vue button {
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 21px;
+    border-radius: 4px;
+    opacity: 0.9;
+    background-color: rgba(186, 110, 78, 0.82);
+    border: none;
+    padding: 10px;
+    margin-left: 45%;
+}
+
+
+
+
+.seventh-vue {
+    position: relative;
+    font-family: 'Lexend';
+    /* background-image: url('./cupimage2.jpg') ; */
+    height: 100vh;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding-top: 70px;
+}
+
+.seventh-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../fill7.png');
+    /* filter: blur(3px); */
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+}
+
+.seventh-vue>h1 {
+    font-family: 'Lexend';
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 127.023%;
+    letter-spacing: -1.575px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+.se-container {
+    background-color: rgba(29, 23, 20, 0.84);
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+
+.se-sub-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding-top: 7%;
+    padding-left: 2%;
+}
+
+.se-sub-container li {
+    list-style: none;
+}
+
+.se-sub-container li ul {
+    margin-bottom: 15px;
+    font-family: 'Poppins';
+    font-size: 20px;
+}

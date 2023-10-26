@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'Poppins';
+    /* Replace with your preferred font name */
+    src: url('../Poppins/Poppins-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    /* Replace with your preferred font name */
+    src: url('../Inter/static/Inter-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Irish grover';
+    /* Replace with your preferred font name */
+    src: url('../Irish_Grover/IrishGrover-Regular.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    /* Replace with your preferred font name */
+    src: url('../Lexend/static/Lexend-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 500;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 8%;
+}
+
+
+.first-vue h1 {
+    font-size: 65px;
+    font-weight: 700;
+    width: 40%;
+    padding-top: 4%;
+    text-align: center;
+}
+
+
+.first-vue {
+    position: relative;
+    /* background-image: url('./cupimage2.jpg') ; */
+    height: 71vh;
+    padding-top: 180px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.first-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    background-image: url('../cup5.png');
+    /* filter: blur(3px); */
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+    background-position: 0px -135px;
+    background-repeat: no-repeat;
+}
+
+.second-vue {
+    position: relative;
+    height: 150vh;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.second-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../cup6.png');
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.second-vue>h1 {
+    color: #6F3D28;
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.second-vue .items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.second-vue .items .item {
+    justify-content: center;
+    text-align: center;
+    width: calc(25% - 10px);
+}
+
+.second-vue .items .item img {
+    width: 180.313px;
+    height: 180.121px;
+    border-radius: 201.724px;
+    margin-top: 30px;
+    border: 2px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.second-vue .items .item h1 {
+    margin-top: 25px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.second-vue .items .item h2 {
+    color: #E04848;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.second-vue .items .item p {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.third-vue {
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 79px;
+}
+
+.third-vue > h1 {
+    color: #291D15;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 7000;
+    line-height: normal;
+    width: 100%;
+}
+
+.third-vue .split-screen {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.third-vue .split-screen .calendrier {
+    width: 452px;
+    height: 447px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 2.76726px 2.21381px 0px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px 0px rgba(0, 0, 0, 0.03), 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 22.33631px 17.86905px 0px rgba(0, 0, 0, 0.04), 0px 41.77761px 33.42209px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+    
+}
+.third-vue .split-screen .calendrier h1 {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+.third-vue .split-screen .calendrier .days {
+    display: flex;
+    justify-content: space-around;
+    width: 93%;
+    margin-left: 3.5%;
+    font-family: 'Poppins';
+    font-weight: 900;
+    margin-top: 25px;
+    font-size: 21px;
+} 
+.third-vue .split-screen .calendrier .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 35px;
+    width: 83%;
+    height: 53%;
+    margin-left: 8%;
+    margin-top: 7%;
+}
+.third-vue .split-screen .calendrier .dates .date{
+    border: 1px solid black;
+    margin: -18px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    padding-top: 10px;
+    transition: 0.7s;
+}
+.third-vue .split-screen .calendrier .dates .date:hover{
+    background-color: #5463b4f6;
+    color: #fff;
+}
+
+
+
+
+
+.third-vue .split-screen .time-reserv {
+    width: 520px;
+    height: 447px;
+    text-align: left;
+    padding-top: 90px;
+}
+
+.third-vue .split-screen .time-reserv p {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.third-vue .split-screen .time-reserv p .champ {
+    border-bottom: 2px solid black;
+    width: 140px;
+    text-align: left;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.third-vue .split-screen .time-reserv p .btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background-color: gainsboro;
+    padding: 3px;
+    border-radius: 50%;
+    font-weight: 900;
+}
+
+.third-vue .split-screen .time-reserv h3 {
+    color: #F54848;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+
+.third-vue .split-screen .time-reserv button {
+    width: 132px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #3F4D9A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+    margin-left: 280px;
+}
+
+.seventh-vue {
+    position: relative;
+    font-family: 'Lexend';
+    /* background-image: url('./cupimage2.jpg') ; */
+    height: 100vh;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding-top: 70px;
+}
+
+.seventh-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../fill7.png');
+    /* filter: blur(3px); */
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+}
+
+.seventh-vue>h1 {
+    font-family: 'Lexend';
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 127.023%;
+    letter-spacing: -1.575px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+.se-container {
+    background-color: rgba(29, 23, 20, 0.84);
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+
+.se-sub-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding-top: 7%;
+    padding-left: 2%;
+}
+
+.se-sub-container li {
+    list-style: none;
+}
+
+.se-sub-container li ul {
+    margin-bottom: 15px;
+    font-family: 'Poppins';
+    font-size: 20px;
+}

@@ -1,0 +1,566 @@
+@font-face {
+    font-family: 'Poppins';
+    /* Replace with your preferred font name */
+    src: url('./Poppins/Poppins-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    /* Replace with your preferred font name */
+    src: url('./Inter/static/Inter-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Irish grover';
+    /* Replace with your preferred font name */
+    src: url('./Irish_Grover/IrishGrover-Regular.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    /* Replace with your preferred font name */
+    src: url('./Lexend/static/Lexend-Light.ttf') format('truetype');
+    /* Provide the correct path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 500;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 8%;
+}
+
+.first-vue {
+    position: relative;
+    /* background-image: url('./cupimage2.jpg') ; */
+    height: 71vh;
+    padding-top: 180px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.first-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    background-image: url('./cup3.png');
+    filter: blur(3px);
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+}
+
+.first-vue h1 {
+    font-size: 65px;
+    font-weight: 700;
+    width: 40%;
+    padding-left: 7%;
+}
+
+.first-vue p {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 144.5%;
+    /* 31.79px */
+    text-transform: capitalize;
+    width: 70%;
+    padding-left: 7%;
+}
+
+.first-vue button {
+    width: 330px;
+    height: 88.302px;
+    border-radius: 10px;
+    background: #B77E66;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.30);
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+.second-vue {
+    position: relative;
+    /* background-image: url('./cupimage2.jpg') ; */
+    height: 76vh;
+    padding-top: 180px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.second-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./fill2.png');
+    /* filter: blur(3px); */
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+}
+
+.second-vue h1 {
+    font-family: 'Inter';
+    color: #471E22;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 127.023%;
+    /* 44.458px */
+    letter-spacing: -1.575px;
+    margin-left: 52%;
+    margin-top: 6%;
+}
+
+.second-vue p {
+    margin-top: 15px;
+    color: #533B2F;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    width: 525px;
+    margin-left: 53%;
+}
+
+.second-vue button {
+    width: 179px;
+    height: 44px;
+    border-radius: 10px;
+    background: #B77E66;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 2%;
+    border: none;
+    margin-left: 78%;
+}
+
+.third-vue {
+    position: relative;
+    height: 60vh;
+    padding-top: 25px;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.third-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./fill3.png');
+    /* filter: blur(3px); */
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+}
+
+.third-vue h1 {
+    font-family: 'Irish grover';
+    color: white;
+    font-size: 64px;
+    font-weight: 400;
+    width: 465px;
+    height: 90.53px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(34, 27, 24, 0.60);
+
+}
+
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.date-item {
+    font-family: 'Irish grover';
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+    text-align: left;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+
+}
+
+
+
+.fourth-vue {
+    position: relative;
+    /* background-image: url('./cupimage2.jpg') ; */
+    height: 90vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding-top: 70px;
+}
+
+.fourth-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./fill4.png');
+    /* filter: blur(3px); */
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+}
+
+.fourth-vue>h1 {
+    font-family: 'Poppins';
+    color: #903711;
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 127.023%;
+    letter-spacing: -1.575px;
+    text-align: center;
+}
+
+.fourth-vue>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #9E5A3D;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    width: 525px;
+    line-height: normal;
+    text-decoration: underline;
+    margin-left: 6%;
+}
+
+.fourth-vue .fo-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fourth-vue .fo-container .card {
+    width: 250px;
+    height: 410.322px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(115, 74, 57, 0.88);
+    box-shadow: 0px 2px 20px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.fourth-vue .fo-container .card h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.fourth-vue .fo-container .card img {
+    width: 210.92px;
+    height: 123.515px;
+    text-align: center;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+.fourth-vue .fo-container .card>p {
+    text-align: justify;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0.24px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.fourth-vue .fo-container .card .subcontainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.fourth-vue .fo-container .card .subcontainer p {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fourth-vue .fo-container .card .subcontainer button {
+    height: 45px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background: #A0583C;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+.fifth-vue {
+    position: relative;
+    font-family: 'Lexend';
+    /* background-image: url('./cupimage2.jpg') ; */
+    height: 100vh;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding-top: 70px;
+}
+
+.fifth-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./fill5.jpg');
+    /* filter: blur(3px); */
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+}
+
+.fifth-vue>h1 {
+    font-family: 'Lexend';
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 127.023%;
+    letter-spacing: -1.575px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+
+.fifth-vue .fo-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fifth-vue .fo-container .card {
+    width: 379px;
+    height: 309.833px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(115, 74, 57, 0.88);
+    box-shadow: 0px 2px 20px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.fifth-vue .fo-container .card h1 {
+    text-align: center;
+    font-size: 32px;
+    width: 178px;
+    margin-left: 24%;
+    font-family: Lexend;
+}
+
+.fifth-vue .fo-container .card > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: #FFF;
+    margin-top: -40px;
+}
+.fifth-vue .fo-container .card .stars  {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.fifth-vue .fo-container .card .stars > img {
+    width: 20px;
+}
+.fifth-vue .fo-container .card>p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0.24px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.fifth-vue .fo-container .card .subcontainer {
+    
+    margin-top: 25px;
+}
+
+.fifth-vue .fo-container .card .subcontainer p {
+    font-style: normal;
+    line-height: normal;
+}
+.dots{
+margin-top: 83px;
+margin-left: 44%;
+margin-bottom: 5%;
+display: flex;
+width: 150px;
+justify-content:space-around;;
+}
+.dots .dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+
+.sixth-vue {
+    position: relative;
+    font-family: 'Lexend';
+    background-color: #E3D9D5;
+    height: 90vh;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding-top: 70px;
+    text-align: center;
+}
+.sixth-vue>h1 {
+    font-family: 'Lexend';
+    color: #533B2F;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 127.023%;
+    letter-spacing: -1.575px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.sixth-vue>img {
+    width: 95%;
+    border: #471E22 solid;
+}
+
+
+
+.seventh-vue {
+    position: relative;
+    font-family: 'Lexend';
+    /* background-image: url('./cupimage2.jpg') ; */
+    height: 100vh;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding-top: 70px;
+}
+
+.seventh-vue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./fill7.png');
+    /* filter: blur(3px); */
+    /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* Place the pseudo-element behind the content */
+    background-size: cover;
+}
+
+.seventh-vue>h1 {
+    font-family: 'Lexend';
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 127.023%;
+    letter-spacing: -1.575px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+.se-container{
+    background-color: rgba(29, 23, 20, 0.84);
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+
+.se-sub-container{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding-top: 7%;
+    padding-left: 2%;
+}
+.se-sub-container li{
+    list-style: none;
+}
+.se-sub-container li ul{
+    margin-bottom: 15px;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
